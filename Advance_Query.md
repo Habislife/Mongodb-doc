@@ -12,8 +12,9 @@ MongoDB provides a variety of query operators to allow complex queries and fine-
 
 ```javascript 
 db.users.find({ age: { $eq: 25 } })
-This will find all users whose age is exactly 25.
 ```
+
+This will find all users whose age is exactly 25.
 
 - **$ne:** Matches documents where the field value is not equal to the specified value.
 
@@ -21,8 +22,9 @@ This will find all users whose age is exactly 25.
 
 ```javascript
 db.users.find({ age: { $ne: 25 } })
-This will find all users whose age is not 25.
 ```
+
+This will find all users whose age is not 25.
 
 - **$gt:** Matches documents where the field value is greater than the specified value.
 
@@ -39,8 +41,9 @@ This will find all users whose age is greater than 30.
 
 ```javascript
 db.users.find({ age: { $lt: 30 } })
-This will find all users whose age is less than 30.
 ```
+
+This will find all users whose age is less than 30.
 
 - **$gte:** Matches documents where the field value is greater than or equal to the specified value.
 
@@ -48,8 +51,9 @@ This will find all users whose age is less than 30.
 
 ```javascript
 db.users.find({ age: { $gte: 18 } })
-This will find all users who are 18 or older.
 ```
+
+This will find all users who are 18 or older.
 
 - **$lte:** Matches documents where the field value is less than or equal to the specified value.
 
@@ -57,8 +61,9 @@ This will find all users who are 18 or older.
 
 ```javascript
 db.users.find({ age: { $lte: 60 } })
-This will find all users who are 60 or younger.
 ```
+
+This will find all users who are 60 or younger.
 
 ### Logical Operators
 
@@ -68,8 +73,9 @@ This will find all users who are 60 or younger.
 
 ```javascript
 db.users.find({ $and: [ { age: { $gte: 18 } }, { age: { $lte: 35 } } ] })
-This finds all users whose age is between 18 and 35, inclusive.
 ```
+
+This finds all users whose age is between 18 and 35, inclusive.
 
 - **$or:** Matches documents that satisfy at least one of the conditions.
 
@@ -77,8 +83,9 @@ This finds all users whose age is between 18 and 35, inclusive.
 
 ```javascript
 db.users.find({ $or: [ { age: { $lt: 20 } }, { age: { $gt: 60 } } ] })
-This finds all users who are either under 20 or over 60.
 ```
+
+This finds all users who are either under 20 or over 60.
 
 - **$not:** Inverts the effect of the query. It can be used to find documents that do not match a condition.
 
@@ -86,8 +93,10 @@ This finds all users who are either under 20 or over 60.
 
 ```javascript
 db.users.find({ age: { $not: { $gt: 30 } } })
-This will find all users whose age is not greater than 30.
 ```
+
+This will find all users whose age is not greater than 30.
+
 
 - **$nor:** Matches documents that do not satisfy any of the conditions.
 
@@ -95,8 +104,9 @@ This will find all users whose age is not greater than 30.
 
 ```javascript
 db.users.find({ $nor: [ { age: { $gt: 30 } }, { age: { $lt: 18 } } ] })
-This finds all users who are between the ages of 18 and 30, inclusive.
 ```
+
+This finds all users who are between the ages of 18 and 30, inclusive.
 
 ### Element Operators
 
@@ -106,8 +116,9 @@ This finds all users who are between the ages of 18 and 30, inclusive.
 
 ```javascript
 db.users.find({ email: { $exists: true } })
-This finds all users who have an email field.
 ```
+
+This finds all users who have an email field.
 
 - **$type:** Matches documents where the field's value is of the specified type.
 
@@ -115,8 +126,9 @@ This finds all users who have an email field.
 
 ```javascript
 db.users.find({ age: { $type: "int" } })
-This finds all users whose age field is an integer.
 ```
+
+This finds all users whose age field is an integer.
 
 ## Indexing in MongoDB
 
@@ -229,6 +241,7 @@ db.orders.aggregate([
   { $group: { _id: "$customerId", totalAmount: { $sum: "$amount" } } }
 ])
 ```
+
 This groups orders by customer and calculates the total amount spent by each customer.
 
 - **$sort:** Sorts the documents by the specified fields.
@@ -248,6 +261,7 @@ This sorts the orders by the order date in descending order.
 ```javascript
 db.orders.aggregate([{ $project: { _id: 0, customerId: 1, amount: 1 } }])
 ```
+
 This will include only the `customerId` and `amount` fields and exclude the `_id` field.
 
 ### Aggregation Pipelines: Chaining Stages
