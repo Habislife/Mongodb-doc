@@ -10,7 +10,7 @@ MongoDB provides a variety of query operators to allow complex queries and fine-
 
  ***Example:***
 
-```javascript 
+```javascript
 db.users.find({ age: { $eq: 25 } })
 ```
 
@@ -96,7 +96,6 @@ db.users.find({ age: { $not: { $gt: 30 } } })
 ```
 
 This will find all users whose age is not greater than 30.
-
 
 - **$nor:** Matches documents that do not satisfy any of the conditions.
 
@@ -297,5 +296,5 @@ db.orders.aggregate([
   }
 ])
 ````
-This joins the `orders` collection with the `customers` collection based on the `customerId` field in `orders` and the `_id` field in `customers`. The result will have an array field `customerInfo` containing matching customer details.
 
+This joins the `orders` collection with the `customers` collection based on the `customerId` field in `orders` and the `_id` field in `customers`. The result will have an array field `customerInfo` containing matching customer details.
