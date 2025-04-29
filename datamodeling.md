@@ -152,3 +152,5 @@ Example:
 | Referencing | Large, independently accessed, frequently updated data |
 | Denormalization | Improves read performance but can risk data duplication |
 | Normalization | Ensures consistency but may require more queries |
+
+![alt text](image-1.png)
