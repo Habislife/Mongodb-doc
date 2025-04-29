@@ -17,7 +17,7 @@ Welcome to the comprehensive MongoDB course! This course is structured into modu
 ### 🔵 Advanced Level
 
 - [Module 5: Performance Optimization and Best Practices](performanceoptimization.md)
-- [Module 6: Security and Authentication](./modules/module6.md)
+- [Module 6: Security and Authentication](securityandauthentication.md)
 - [Module 7: MongoDB in Real-World Applications](./modules/module7.md)
 
 ### 🟣 Expert Level
