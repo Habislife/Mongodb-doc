@@ -63,7 +63,7 @@ db.createUser({
 
 #### Create a Custom Role
 
-```javascript 
+```javascript
 use admin
 
 db.createRole({
