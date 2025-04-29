@@ -62,7 +62,7 @@ MongoDB supports several numeric types:
 
 Note::writing_hand: BSON differentiates between `int`, `long`, `double`, and `decimal`, but in JSON all are just "number".
 
-### 3. Number
+### 3. Boolean
 
 - **Description**: Represents a binary value: true or false.
 
