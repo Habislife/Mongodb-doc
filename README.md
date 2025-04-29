@@ -18,7 +18,7 @@ Welcome to the comprehensive MongoDB course! This course is structured into modu
 
 - [Module 5: Performance Optimization and Best Practices](performanceoptimization.md)
 - [Module 6: Security and Authentication](securityandauthentication.md)
-- [Module 7: MongoDB in Real-World Applications](./modules/module7.md)
+- [Module 7: MongoDB in Real-World Applications](realworldexample.md)
 
 ### 🟣 Expert Level
 
