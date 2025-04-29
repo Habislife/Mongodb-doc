@@ -71,7 +71,6 @@ Important points:
 ### Introduction to MongoDB Replication
 
 - Replication = Copying data across multiple servers (replica set).
-
 - Provides ***high availability*** and data ***redundancy***.
 
 ### Setting up Replica Sets
@@ -87,7 +86,6 @@ Steps:
 
 - ***Write Concern:*** How many nodes must acknowledge a write.
 Examples: `w: 1` (primary only), `w: majority` (majority of nodes).
-
 - ***Read Concern:*** Guarantees on the data being read.
 Examples: `local`, `majority`, `linearizable`.
 
@@ -105,9 +103,7 @@ Examples: `local`, `majority`, `linearizable`.
 
 - ***Chunk Processing:*** Process data in small manageable parts (pagination, cursors).
 - ***Aggregation Pipelines:*** Use MongoDB's efficient pipelines for data transformations instead of pulling data to application side.
-
 - ***Compression:*** Enable data compression at storage level (WiredTiger uses snappy/zlib/zstd).
-
 - ***Archiving Old Data:*** Move cold data to cheaper storage or secondary collections.
 
 ![alt text](image-2.png)
