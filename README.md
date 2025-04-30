@@ -22,12 +22,8 @@ Welcome to the comprehensive MongoDB course! This course is structured into modu
 
 ### 🟣 Expert Level
 
-- [Module 8: Advanced MongoDB Features](./modules/module8.md)
+- [Module 8: Advanced MongoDB Features](advancefeature.md)
 - [Module 9: Monitoring, Troubleshooting, and Scaling](./modules/module9.md)
-
-### ✅ Final Project
-
-- [Module 10: Full-Stack Application with MongoDB](./modules/module10.md)
 
 ---
 
