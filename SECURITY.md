@@ -6,16 +6,16 @@ We actively maintain and apply security updates to the following versions:
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 0.1     | ✅ Supported       |
-| 0.2     | ✅ Supported       |
-| < 0.01   | ❌ No longer supported |
+| 0.1     | :white_check_mark: Supported |
+| 0.2     | :white_check_mark: Supported |
+| < 0.01  | :x: No longer supported |
 
 ## Reporting a Vulnerability
 
 If you discover a security vulnerability in this MongoDB-based project, please report it responsibly.
 
 - **Do not create a public GitHub issue.**
-- Instead, send an email to: **bishalf98@gmail.com**
+- Instead, send an email to: **<bishalf98@gmail.com>**
 - Include the following:
   - Description of the vulnerability
   - Steps to reproduce
@@ -42,4 +42,3 @@ To ensure your MongoDB deployment remains secure:
 - [MongoDB Security Checklist](https://www.mongodb.com/docs/manual/administration/security-checklist/)
 - [MongoDB Production Notes](https://www.mongodb.com/docs/manual/administration/production-notes/)
 - [CVE Database for MongoDB](https://www.cvedetails.com/vendor/13106/Mongodb.html)
-

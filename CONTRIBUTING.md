@@ -13,10 +13,12 @@ The following is a set of guidelines for contributing to this repository. These 
 Click the “Fork” button on the top right to create your own copy of the repo.
 
 ### 2. Clone Your Fork
+
 ```bash
 git clone [https://github.com/Habislife/Mongodb-doc.git]
 cd your-forked-repo
 ```
+
 ### Create a Branch
 
 Create a new branch for your feature or fix:
@@ -52,6 +54,7 @@ Go to the original repository and open a Pull Request from your fork. Describe t
 - 🧹 Code cleanup and refactoring
 
 ## 💡 Contribution Tips
+
 - Use clear, descriptive commit messages.
 - Write clean, modular, and consistent code.
 - Include comments or documentation for complex logic.
@@ -59,9 +62,11 @@ Go to the original repository and open a Pull Request from your fork. Describe t
 - Be respectful and collaborative.
 
 ## 📜 License
+
 By contributing, you agree that your contributions will be licensed under the same license as this repository.
 
 ## 🙋 Need Help?
+
 If you're unsure how to get started, feel free to open an issue or reach out via discussions. We're happy to help!
 
 Happy coding! 🚀

@@ -10,31 +10,31 @@ MongoDB is a NoSQL, document-oriented database designed for high performance, sc
 
 MongoDB is a NoSQL database that stores data in a flexible, document-oriented format rather than the traditional row and column format used by relational databases. The architecture of MongoDB is designed to provide high availability, scalability, and performance. Here’s an overview of its key components:
 
-1. **Database**
+**1. **Database:**
 
 - MongoDB organizes data into databases. Each database can contain multiple collections.
 
 - A database is essentially a container for collections and their documents. Each MongoDB server can have multiple databases.
 
-2. **Collection**
+**2. Collection:**
 
 - Collections are the equivalent of tables in relational databases. A collection holds multiple documents.
 
 - Unlike relational tables, collections do not require a predefined schema, allowing flexibility in the structure of stored documents.
 
-3. **Document**
+**3. Document:**
 
 - The basic unit of data in MongoDB is the document, which is a JSON-like BSON (Binary JSON) object. BSON is a binary representation of JSON objects.
 
 - A document is composed of key-value pairs, and the values can be various types, including arrays, embedded documents, or basic types like strings, integers, and dates.
 
-4. **Replica Set**
+**4. Replica Set:**
 
 - Replica sets provide high availability and redundancy. A replica set consists of a primary node and one or more secondary nodes that replicate the data of the primary.
 
 - If the primary node fails, one of the secondary nodes is automatically promoted to primary, ensuring that the database remains available.
 
-5. **Sharding**
+**5. Sharding:**
 
 - Sharding is MongoDB’s way of distributing data across multiple servers (or clusters). This allows MongoDB to handle very large datasets and high-throughput operations.
 
@@ -42,44 +42,44 @@ MongoDB is a NoSQL database that stores data in a flexible, document-oriented fo
 
 - Sharding allows MongoDB to scale out horizontally across multiple machines, improving both read and write performance.
 
-6. **Mongos**
+**6. Mongos:**
 
 - Mongos is a routing service that directs client requests to the appropriate shard in a sharded cluster. Clients connect to mongos instances, which then forward requests to the correct shard based on the data location and shard key.
 
-7. **Config Servers**
+**7. Config Servers:**
 Config servers store metadata and configuration settings for the sharded cluster, such as the mapping of data chunks to shards and information about the cluster topology.
 
 - Typically, there are three config servers in a sharded cluster to ensure redundancy and fault tolerance.
 
-8. **Journaling**
+**8. Journaling:**
 
 - Journaling is used to ensure data durability. MongoDB writes changes to a journal file before applying them to the actual data files, helping to recover data in case of a crash.
 
-9. **Storage Engine**
+**9. Storage Engine:**
 
 - MongoDB supports multiple storage engines, such as the WiredTiger engine (default) and MMAPv1. The storage engine manages how data is stored on disk.
 
 - The WiredTiger engine is designed for high concurrency and provides features like compression and document-level locking.
 
-10. **Aggregation Framework**
+**10. Aggregation Framework:**
 
 - The Aggregation Framework is used for data processing and transformation. It allows you to perform operations like filtering, sorting, grouping, and joining data.
 
 - MongoDB also supports MapReduce for complex data processing tasks, although it is now less commonly used in favor of the aggregation framework.
 
-11. **Indexing**
+**11. Indexing:**
 
 - MongoDB supports various types of indexes to improve query performance, including single-field indexes, compound indexes, geospatial indexes, and text indexes.
 
 - Indexes help MongoDB quickly locate documents, reducing the amount of data that needs to be scanned.
 
-12. **Write Concern & Read Concern**
+**12. Write Concern & Read Concern:**
 
 - Write Concern determines the level of acknowledgment required for a write operation. It can be configured to ensure the write is acknowledged by a certain number of replica nodes.
 
 - Read Concern defines the consistency and isolation properties of the data read from the database.
 
-#### Key Features of MongoDB's Architecture:
+#### Key Features of MongoDB's Architecture
 
 - **Scalability:** MongoDB's horizontal scaling with sharding allows it to handle large amounts of data by distributing the load across multiple servers.
 
@@ -108,13 +108,13 @@ By combining these features, MongoDB provides a flexible, scalable, and high-per
 
 #### Option 1: Install via MongoDB MSI Installer
 
-1. Go to [MongoDB Download Center](https://www.mongodb.com/try/download/community) and download the Windows MSI installer.
-2. Run the installer and follow the setup wizard.
+*1.* Go to [MongoDB Download Center](https://www.mongodb.com/try/download/community) and download the Windows MSI installer.
+*2.* Run the installer and follow the setup wizard.
 
 - Select **Complete Installation**.
 - Ensure the option **Run MongoDB as a Service** is checked.
 
-3. After installation, open Command Prompt and verify installation
+*3.* After installation, open Command Prompt and verify installation
 
 ```shell
 mongod --version
@@ -196,15 +196,15 @@ db.myCollection.insertOne({ name: "John Doe", age: 30 })
 
 ### Connecting to MongoDB Atlas from Your Local Machine
 
-1. In the Atlas UI, go to Database > Connect.
-2. Select Connect Your Application.
-3. Copy the connection string:
+*1.* In the Atlas UI, go to Database > Connect.
+*2.* Select Connect Your Application.
+*3.* Copy the connection string:
 
 ```shell
 mongodb+srv://<username>:<password>@cluster0.mongodb.net/test
 ```
 
-4. Use it in mongosh:
+*4.* Use it in mongosh:
 
 ```shell
 mongosh "mongodb+srv://<username>:<password>@cluster0.mongodb.net/test"
