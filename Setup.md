@@ -10,7 +10,7 @@ MongoDB is a NoSQL, document-oriented database designed for high performance, sc
 
 MongoDB is a NoSQL database that stores data in a flexible, document-oriented format rather than the traditional row and column format used by relational databases. The architecture of MongoDB is designed to provide high availability, scalability, and performance. Here’s an overview of its key components:
 
-**1. **Database:**
+**1. Database:**
 
 - MongoDB organizes data into databases. Each database can contain multiple collections.
 
